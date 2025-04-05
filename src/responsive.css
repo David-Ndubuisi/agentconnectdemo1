@@ -134,7 +134,8 @@
   position: relative;
   background-color: #5abacf;
   padding: 30px;
-  border-radius: 15px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
