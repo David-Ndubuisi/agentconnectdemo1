@@ -464,6 +464,25 @@
     text-align: center;
     padding: 10px;
   }
+
+  .feature-text-left {
+    position: absolute;
+    z-index: 10;
+    margin-top: 220px;
+  }
+
+  .feature-text-left button {
+    width: 86%;
+  }
+
+  .feature-text-left p {
+    width: 80%;
+    margin-left: 47px;
+  }
+
+  #feature-img-left {
+    margin-bottom: 180px;
+  }
 }
 
 @media (max-width: 768px) {

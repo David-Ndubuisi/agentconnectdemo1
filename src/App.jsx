@@ -49,7 +49,7 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
                   <div className="hero-text">
                     <h1>
                       Discover your perfect new home with{" "}
-                      <span>Agent Connect</span>.
+                      <span>AgentConnect</span>.
                     </h1>
                   </div>
                   <div className="hero-image">

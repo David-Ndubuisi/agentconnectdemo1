@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./responsive.css";
 
 const Features = () => {
   return (
@@ -28,7 +28,11 @@ const Features = () => {
           </p>
           <button className="feature-btn">Post Request</button>
         </div>
-        <img src="/images/Frame427318273.png" alt="Post a Property Request" />
+        <img
+          id="feature-img-left"
+          src="/images/Frame427318273.png"
+          alt="Post a Property Request"
+        />
       </div>
 
       <div className="feature">
