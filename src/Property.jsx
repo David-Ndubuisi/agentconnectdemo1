@@ -5,6 +5,7 @@ import PropertyDescription from "./components/PropertyDescription.jsx";
 import PropertyMap from "./components/PropertyMap.jsx";
 import { useParams } from "react-router-dom";
 import properties from "./data/properties.js";
+import "./components/PropertyPage.css";
 
 function Property() {
   const { id } = useParams();
@@ -13,12 +14,22 @@ function Property() {
   if (!property) return <div>Property not found</div>;
 
   return (
-    <div>
-      <h2>{property.name}</h2>
-      <p>{property.location}</p>
-      <p>{property.price}</p>
-      <img src={property.image} alt={property.name} />
-      {/* Add map, description etc here */}
+    <div className="property-page">
+      <PropertyHeader
+        image={property.image}
+        name={property.name}
+        price={property.price}
+      />
+
+      <PropertyDetails
+        location={property.location}
+        price={property.price}
+        availability={property.availability}
+      />
+
+      <PropertyDescription description={property.description} />
+
+      <PropertyMap location={property.location} />
     </div>
   );
 }

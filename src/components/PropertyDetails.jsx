@@ -1,47 +1,37 @@
-import React from "react";
-import "../styles.css";
-import twitterX from "/Users/Admin/AgentConnect@/public/images/pngwing.png";
-
-const Footer = () => {
+function PropertyDetails({ price, location, availability }) {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-left">
-          <h2 className="footer-logo">
-            <span className="agent">Agent</span> Connect
-          </h2>
-          <p>
-            We offer the best service, online and offline inspection, affordable
-            percentage, and many more just to make house hunting as convenient
-            as possible for you.
-          </p>
-        </div>
-
-        <div className="footer-links">
-          <h3>Important Links</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
-            <li>Terms Of Service</li>
-            <li>Terms & Conditions</li>
-            <li>FAQs</li>
-          </ul>
-        </div>
-
-        <div className="footer-socials">
-          <h3>Follow Us</h3>
-          <p>Connect with us via our social media links</p>
-          <div className="social-icons">
-            <i class="bx bxl-facebook"></i>
-            <i class="bx bxl-instagram"></i>
-            <img id="twitterX" src={twitterX} />
-            <i class="bx bxl-youtube"></i>
-          </div>
-        </div>
+    <div className="property-details2">
+      <h2>Property Details</h2>
+      <div className="details-grid">
+        <p>
+          <strong>Price:</strong> {price}
+        </p>
+        <p>
+          <strong>Address:</strong> {location}
+        </p>
+        <p>
+          <strong>Property Type:</strong> Flat
+        </p>
+        <p>
+          <strong>Bedrooms:</strong> 1 bedroom
+        </p>
+        <p>
+          <strong>Bathrooms:</strong> 1 bathroom
+        </p>
+        <p>
+          <strong>Market Status:</strong>{" "}
+          <span className="status">{availability}</span>
+        </p>
+        <p>
+          <strong>Reviews:</strong> <i class="bx bxs-star"></i> 3.5 (12 reviews)
+        </p>
       </div>
-    </footer>
+      <div className="details-buttons">
+        <button id="schdl_insp">Schedule Inspection</button>
+        <button>Contact Agent</button>
+      </div>
+    </div>
   );
-};
+}
 
-export default Footer;
+export default PropertyDetails;

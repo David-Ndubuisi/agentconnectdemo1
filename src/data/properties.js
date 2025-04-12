@@ -13,6 +13,7 @@ const properties = [
     location: "14 Shubomi street, Surulere, Lagos",
     availability: "2 Flats available",
     image: featuredHouse1,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const properties = [
     location: "13 Adeniran Ogunsanya street, Surulere, Lagos",
     availability: "1 Flat available",
     image: featuredHouse2,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const properties = [
     location: "17 Adeniran Ogunsanya street, Surulere, Lagos",
     availability: "1 Flat available",
     image: featuredHouse3,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ const properties = [
     location: "24 Adeniran Ogunsanya street, Surulere, Lagos",
     availability: "1 Flat available",
     image: featuredHouse4,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const properties = [
     location: "14 Adeniran Ogunsanya street, Surulere, Lagos",
     availability: "1 Flat available",
     image: featuredHouse5,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ const properties = [
     location: "14 Adeniran Ogunsanya street, Surulere, Lagos",
     availability: "1 Flat available",
     image: featuredHouse2,
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
   },
 ];
 
