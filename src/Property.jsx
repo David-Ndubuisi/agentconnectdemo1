@@ -29,7 +29,7 @@ function Property() {
 
       <PropertyDescription description={property.description} />
 
-      <PropertyMap location={property.location} />
+      <PropertyMap location={property.location} mapSrc={property.mapSrc} />
     </div>
   );
 }

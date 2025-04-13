@@ -13,7 +13,8 @@ const properties = [
     location: "14 Shubomi street, Surulere, Lagos",
     availability: "2 Flats available",
     image: featuredHouse1,
-    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const properties = [
     availability: "1 Flat available",
     image: featuredHouse2,
     description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const properties = [
     availability: "1 Flat available",
     image: featuredHouse3,
     description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ const properties = [
     availability: "1 Flat available",
     image: featuredHouse4,
     description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ const properties = [
     availability: "1 Flat available",
     image: featuredHouse5,
     description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const properties = [
     availability: "1 Flat available",
     image: featuredHouse2,
     description: "A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amA standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.et fantascium alta semitri vansaculor.A standard 2 flat Lorem ipsium dolor amet fantascium alta semitri vansaculor.",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1967234667454!2d3.3549539740978402!3d6.496760423475359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c136a4c421b%3A0xafd8671aca260156!2s13%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos!5e0!3m2!1sen!2sng!4v1744503281786!5m2!1sen!2sng",
   },
 ];
 

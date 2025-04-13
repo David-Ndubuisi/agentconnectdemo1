@@ -34,14 +34,21 @@
 }
 
 .details-grid {
+  width: 79%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 1.2rem;
   margin-top: 1rem;
+  margin-left: 7.3rem;
+}
+
+.details-grid p i {
+  font-size: 1.1rem;
+  color: gold;
 }
 
 .status {
-  color: green;
+  color: #32d937;
   font-weight: bold;
 }
 
@@ -49,6 +56,19 @@
   margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
+  margin-left: 7.3rem;
+}
+
+@media (max-width: 768px) {
+  .details-grid {
+    margin-left: 0rem;
+  }
+  .details-grid p {
+    width: 70%;
+  }
+  .details-buttons {
+    margin-left: 0rem;
+  }
 }
 
 .details-buttons button {
@@ -88,8 +108,8 @@
 }
 
 .property-description p {
-  width: 90%;
-  margin-left: 3.3rem;
+  width: 80%;
+  margin-left: 7.2rem;
   margin-top: 2rem;
   background: #3ebbca;
   padding: 1.3rem 1.3rem 3rem 1.3rem;
@@ -98,17 +118,32 @@
   line-height: 1.4rem;
 }
 
-.map-image img {
-  width: 100%;
-  height: auto;
-  margin-top: 1rem;
-  border-radius: 6px;
+@media (max-width: 768px) {
+  .property-description p {
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
+
+.property-map p {
+  padding-top: 2%;
+  margin-left: 7.2rem;
+}
+
+.property-map p i {
+  color: #3ebbca;
+}
+
+.map-image {
+  margin-left: 7.2rem;
+  padding-top: 2%;
 }
 
 .map-buttons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  margin-left: 47.7rem;
 }
 
 .map-buttons button {
@@ -125,4 +160,21 @@
   background: #44bfd0;
   color: #fff;
   border: 1px solid #44bfd0;
+}
+
+@media (max-width: 768px) {
+  .property-map p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0rem;
+  }
+  .map-image {
+    margin-left: 0rem;
+  }
+  .map-image iframe {
+    width: 100%;
+  }
+  .map-buttons {
+    margin-left: 1.3rem;
+  }
 }

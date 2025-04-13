@@ -4,7 +4,10 @@ function PropertyDetails({ price, location, availability }) {
       <h2>Property Details</h2>
       <div className="details-grid">
         <p>
-          <strong>Price:</strong> {price}
+          <strong>Price:</strong> {price} /Year
+        </p>
+        <p>
+          <strong>Toilets:</strong> -
         </p>
         <p>
           <strong>Address:</strong> {location}
@@ -16,14 +19,17 @@ function PropertyDetails({ price, location, availability }) {
           <strong>Bedrooms:</strong> 1 bedroom
         </p>
         <p>
-          <strong>Bathrooms:</strong> 1 bathroom
-        </p>
-        <p>
           <strong>Market Status:</strong>{" "}
           <span className="status">{availability}</span>
         </p>
         <p>
-          <strong>Reviews:</strong> <i class="bx bxs-star"></i> 3.5 (12 reviews)
+          <strong>Bathrooms:</strong> 1 bathroom
+        </p>
+        <p>
+          <strong>
+            Reviews <i class="bx bxs-star"></i> :
+          </strong>{" "}
+          3.5 (12 reviews)
         </p>
       </div>
       <div className="details-buttons">
