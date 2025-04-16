@@ -3,6 +3,7 @@ import PropertyHeader from "./components/PropertyHeader.jsx";
 import PropertyDetails from "./components/PropertyDetails.jsx";
 import PropertyDescription from "./components/PropertyDescription.jsx";
 import PropertyMap from "./components/PropertyMap.jsx";
+import PropertyPayment from "./components/PropertyPayment";
 import { useParams } from "react-router-dom";
 import properties from "./data/properties.js";
 import "./components/PropertyPage.css";
@@ -15,21 +16,20 @@ function Property() {
 
   return (
     <div className="property-page">
-      <PropertyHeader
-        image={property.image}
-        name={property.name}
-        price={property.price}
-      />
+      <PropertyHeader property={property} />
 
       <PropertyDetails
         location={property.location}
         price={property.price}
         availability={property.availability}
+        agentId={property.agentId}
       />
 
       <PropertyDescription description={property.description} />
 
       <PropertyMap location={property.location} mapSrc={property.mapSrc} />
+
+      <PropertyPayment />
     </div>
   );
 }

@@ -5,22 +5,62 @@
 }
 
 .property-header {
-  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.carousel-image-wrapper {
+  animation: fadeSlide 0.5s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .property-main-image {
   width: 100%;
-  max-height: 400px;
+  height: 400px;
   object-fit: fill;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
 }
 
-.property-header-info {
-  margin-top: 1rem;
-}
-
-.property-header-info h1 {
+.carousel button.prev,
+.carousel button.next {
+  color: #0c646f;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  padding: 5px 18px 7px 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.carousel button.prev {
+  left: 15px;
+}
+
+.carousel button.next {
+  right: 15px;
 }
 
 .property-details2 {
@@ -29,8 +69,9 @@
 }
 
 .property-details2 h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
   border-bottom: 2px solid #004d40;
+  padding-left: 7.3rem;
 }
 
 .details-grid {
@@ -69,6 +110,9 @@
   .details-buttons {
     margin-left: 0rem;
   }
+  .property-details2 h2 {
+    padding-left: 0rem;
+  }
 }
 
 .details-buttons button {
@@ -103,8 +147,9 @@
 
 .property-description h2,
 .property-map h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
   border-bottom: 2px solid #004d40;
+  padding-left: 7.3rem;
 }
 
 .property-description p {
@@ -122,6 +167,10 @@
   .property-description p {
     width: 100%;
     margin-left: 0rem;
+  }
+  .property-description h2,
+  .property-map h2 {
+    padding-left: 0rem;
   }
 }
 
@@ -176,5 +225,65 @@
   }
   .map-buttons {
     margin-left: 1.3rem;
+  }
+}
+
+.property-payment {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.property-payment h2 {
+  padding-bottom: 1.1rem;
+  border-bottom: 2px solid #004d40;
+  padding-left: 7.3rem;
+}
+
+.property-payment p {
+  width: 80%;
+  padding-top: 2%;
+  margin-left: 7.2rem;
+}
+
+.payment-warning {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.payment-warning span {
+  color: red;
+}
+
+.rent-btn {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  background: #0c646f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: 0.7s;
+  margin-top: 3rem;
+  margin-left: 63.7rem;
+}
+
+.rent-btn:hover {
+  background: #44bfd0;
+  color: #fff;
+  border: 1px solid #44bfd0;
+}
+
+@media (max-width: 768px) {
+  .property-payment h2 {
+    padding-left: 0rem;
+  }
+
+  .property-payment p {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .rent-btn {
+    margin-left: 0rem;
   }
 }

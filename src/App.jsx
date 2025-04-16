@@ -12,6 +12,7 @@ import Login from "./Login.jsx";
 import Signup from "./Signup.jsx";
 import Explore from "./Explore.jsx";
 import Property from "./Property.jsx";
+import Agent from "./Agent.jsx";
 import livingRoomImage from "../public/images/2375ade4898768c14c2355d620e056b4.jpeg"; // Import image
 import FeaturedProperties from "./FeaturedProperties.jsx";
 import Services from "./Services.jsx";
@@ -60,6 +61,7 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/property/:id" element={<Property />} />
+        <Route path="/agent/:id" element={<Agent />} />
         <Route
           path="/"
           element={

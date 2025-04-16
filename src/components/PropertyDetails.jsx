@@ -1,4 +1,8 @@
-function PropertyDetails({ price, location, availability }) {
+import { useParams, useNavigate } from "react-router-dom";
+
+function PropertyDetails({ price, location, availability, agentId }) {
+  const navigate = useNavigate();
+
   return (
     <div className="property-details2">
       <h2>Property Details</h2>
@@ -34,7 +38,9 @@ function PropertyDetails({ price, location, availability }) {
       </div>
       <div className="details-buttons">
         <button id="schdl_insp">Schedule Inspection</button>
-        <button>Contact Agent</button>
+        <button onClick={() => navigate(`/agent/${agentId}`)}>
+          Contact Agent
+        </button>
       </div>
     </div>
   );
