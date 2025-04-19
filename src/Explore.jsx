@@ -60,7 +60,7 @@ function Explore() {
             </div>
           ))}
         </div>
-        <button className="signup exp-btn">Sign up</button>
+        <button className="signup exp-btn">View More</button>
       </div>
 
       <div className="featured-properties">

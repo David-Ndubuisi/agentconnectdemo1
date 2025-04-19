@@ -10,6 +10,7 @@ import "./styles.css";
 import Navbar from "./components/Navbar.jsx";
 import Login from "./Login.jsx";
 import Signup from "./Signup.jsx";
+import Profile from "./Profile.jsx";
 import Explore from "./Explore.jsx";
 import Property from "./Property.jsx";
 import Agent from "./Agent.jsx";
@@ -55,6 +56,14 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
           element={
             <ProtectedRoute isLoggedIn={isLoggedIn}>
               <Explore isLoggedIn={isLoggedIn} />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <Profile />
             </ProtectedRoute>
           }
         />

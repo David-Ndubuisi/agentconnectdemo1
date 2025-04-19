@@ -1,0 +1,108 @@
+.profile-container {
+  font-family: "Poppins", sans-serif;
+  color: #0a3b3c;
+}
+
+.profile-header {
+  background-color: #0c646f;
+  color: white;
+  text-align: center;
+  padding: 7rem 1rem 3rem 1rem;
+  position: relative;
+  cursor: default;
+}
+
+.profile-avatar img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.profile-plan {
+  margin-top: 0.3rem;
+  font-size: 14px;
+}
+
+.upgrade a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+.profile-section {
+  padding: 1.5rem;
+}
+
+.profile-section ul {
+  padding-left: 7.3rem;
+}
+
+.profile-section h2 {
+  padding-bottom: 1rem;
+  padding-left: 7.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: black;
+  border-bottom: 2px solid #0c646f;
+}
+
+.profile-links {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-links li {
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.badge-new {
+  background-color: #1caedb;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.bx-error-circle {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .profile-avatar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+  }
+  .profile-section ul {
+    padding-left: 0rem;
+  }
+  .profile-section h2 {
+    color: #fff;
+    padding-left: 0rem;
+    border-bottom: 2px solid #fff;
+  }
+  .profile-section {
+    background-color: #0c646f;
+    color: #fff;
+  }
+  .bx-error-circle {
+    color: orange;
+  }
+}

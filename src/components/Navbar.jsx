@@ -43,10 +43,10 @@ const Navbar = ({ isLoggedIn }) => {
         <div className={`auth-buttons ${isOpen ? "active" : ""}`}>
           {isLoggedIn ? (
             <>
-              <Link to="/signup" className="signup">
+              <Link to="/profile" className="signup">
                 <i className="bx bx-user"></i>
               </Link>
-              <Link to="/signup" className="signup">
+              <Link to="" className="signup">
                 <i className="bx bx-menu"></i>
               </Link>
             </>
@@ -62,8 +62,6 @@ const Navbar = ({ isLoggedIn }) => {
           )}
         </div>
       </nav>
-
-      <Hero />
     </div>
   );
 };
