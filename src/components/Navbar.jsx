@@ -28,12 +28,6 @@ const Navbar = ({ isLoggedIn }) => {
               <Link to="/explore">Explore</Link>
             </li>
             <li>
-              <a href="#">For Sale</a>
-            </li>
-            <li>
-              <a href="#">To Rent</a>
-            </li>
-            <li>
               <a href="#">Contact Us</a>
             </li>
           </ul>
@@ -45,9 +39,6 @@ const Navbar = ({ isLoggedIn }) => {
             <>
               <Link to="/profile" className="signup">
                 <i className="bx bx-user"></i>
-              </Link>
-              <Link to="" className="signup">
-                <i className="bx bx-menu"></i>
               </Link>
             </>
           ) : (

@@ -44,6 +44,9 @@ const FeaturedProperties = () => {
           </div>
         ))}
       </div>
+      <Link to="/explore">
+        <button className="signup exp-btn">Explore</button>
+      </Link>
     </div>
   );
 };
