@@ -41,9 +41,9 @@ const Profile = () => {
             <i className="bx bx-lock-alt"></i> Privacy{" "}
             <i className="bx bx-chevron-down"></i>
           </li>
-          <li>
+          <li id="logout">
             <i className="bx bx-log-out"></i> Log out{" "}
-            <i className="bx bx-chevron-down"></i>
+            <i className="bx bx-chevron-right"></i>
           </li>
         </ul>
       </div>

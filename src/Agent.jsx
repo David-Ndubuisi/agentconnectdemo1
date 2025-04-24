@@ -17,7 +17,8 @@ function Agent() {
         <div className="agent-info">
           <h2>{agent.name}</h2>
           <p className="agent-rating">
-            <i class="bx bxs-star"></i> 4.5 (15 reviews)
+            <i className="bx bxs-star"></i> {agent.ratings} (
+            {parseInt(agent.ratings) * 3} reviews)
           </p>
         </div>
       </div>
@@ -44,7 +45,15 @@ function Agent() {
             <div className="info-box">
               <p>{agent.bio}</p>
               <p>
-                <strong>Email:</strong> {agent.email}
+                <strong>Email:</strong>{" "}
+                <a
+                  href={`mailto:${agent.email}?subject=Property Inquiry from AgentConnect&body=Hi ${agent.name}, I got your contact from AgentConnect and I'm interested in your listings.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "#0077cc" }}
+                >
+                  {agent.email}
+                </a>
               </p>
               <p>
                 <strong>Phone:</strong> {agent.phone}
@@ -55,7 +64,18 @@ function Agent() {
 
         <div className="agent-buttons">
           <button id="schdl_insp">Schedule Inspection</button>
-          <button>Message</button>
+          <a
+            href={`https://wa.me/234${agent.phone.replace(
+              /^0/,
+              ""
+            )}?text=Hi%20${encodeURIComponent(
+              agent.name
+            )},%20I%20got%20your%20number%20from%20AgentConnect.`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Message</button>
+          </a>
         </div>
       </div>
     </div>

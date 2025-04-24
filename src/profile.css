@@ -69,13 +69,16 @@
   cursor: pointer;
 }
 
+#logout:hover {
+  color: rosybrown;
+}
+
 .badge-new {
   background-color: #1caedb;
   color: white;
   font-size: 12px;
   padding: 2px 6px;
   border-radius: 10px;
-  margin-left: auto;
 }
 
 .bx-error-circle {

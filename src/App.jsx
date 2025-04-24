@@ -12,6 +12,7 @@ import Login from "./Login.jsx";
 import Signup from "./Signup.jsx";
 import Profile from "./Profile.jsx";
 import Explore from "./Explore.jsx";
+import Contact from "./Contact.jsx";
 import Property from "./Property.jsx";
 import Agent from "./Agent.jsx";
 import livingRoomImage from "../public/images/2375ade4898768c14c2355d620e056b4.jpeg"; // Import image
@@ -46,7 +47,7 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div>
       {/* Conditionally render Navbar only if NOT on login or signup page */}
-      {location.pathname !== "/login" && location.pathname !== "/signup" && (
+      {!["/login", "/signup", "/contact"].includes(location.pathname) && (
         <Navbar isLoggedIn={isLoggedIn} />
       )}
 
@@ -67,6 +68,7 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
             </ProtectedRoute>
           }
         />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/property/:id" element={<Property />} />
@@ -132,31 +134,6 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
                     Finding a house couldn't <br />
                     get any <span className="highlight">easier!</span>
                   </h2>
-
-                  <div className="search-bar-container">
-                    <div className="search-input-group-flex">
-                      <div className="search-input-group">
-                        <input
-                          type="text"
-                          placeholder="Search preferred location"
-                        />
-                        <i className="bx bx-search search-icon"></i>
-                      </div>
-
-                      <div className="search-options">
-                        <select>
-                          <option>Rental type</option>
-                          <option>Self-contain</option>
-                          <option>1 Bedroom</option>
-                          <option>2 Bedroom</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <button className="filter-button">
-                      <i class="bx bx-filter-alt"></i>
-                    </button>
-                  </div>
                 </div>
                 <FeaturedProperties />
                 <NewListing />

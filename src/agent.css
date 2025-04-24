@@ -83,6 +83,10 @@
   margin-left: 0.7rem;
 }
 
+.info-box a {
+  color: #d4f0f0;
+}
+
 .agent-buttons {
   margin-top: 1.5rem;
   display: flex;

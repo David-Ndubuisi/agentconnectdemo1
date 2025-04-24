@@ -21,9 +21,16 @@ function PropertyMap({ location, mapSrc }) {
         ></iframe>
       </div>
       <div className="map-buttons">
-        <Link to="">
-          <button id="schdl_insp">Go to Google app</button>
-        </Link>
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+            location
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button id="schdl_insp">Go to Google Maps</button>
+        </a>
+
         <button>Share your location</button>
       </div>
     </div>
