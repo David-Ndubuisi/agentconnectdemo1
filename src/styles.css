@@ -934,6 +934,7 @@
   font-size: 48px;
   font-weight: 600;
   color: #000;
+  cursor: default;
 }
 
 .highlight {
@@ -1008,6 +1009,10 @@
 }
 
 @media (max-width: 768px) {
+  .search-bar-wrapper h2 {
+    font-size: 38px;
+    font-weight: 600;
+  }
   .search-bar-container {
     margin-left: 50px;
   }

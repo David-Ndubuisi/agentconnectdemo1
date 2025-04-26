@@ -7,7 +7,7 @@
   background: white;
   flex-wrap: wrap;
   position: relative;
-  z-index: 1000; /* Ensure navbar stays on top */
+  z-index: 1000;
 }
 
 /* Hamburger Menu */
@@ -15,7 +15,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  z-index: 1100; /* Higher than the menu */
+  z-index: 1100;
 }
 
 .bar {
@@ -38,38 +38,46 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Hide menu on larger screens */
+/* Nav Links */
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin-left: -100px;
 }
 
-/* Responsive Styles */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
+  .nav-links {
+    margin-left: 0px;
+  }
 
   .nav-links,
   .auth-buttons {
-    display: none;
     flex-direction: column;
-    width: 100%;
     background: white;
+    width: 100%;
     text-align: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1050; /* Higher than the rest of the content */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 0;
   }
 
   .nav-links.active,
   .auth-buttons.active {
-    transition: 2s;
-    display: flex;
+    max-height: 500px; /* Enough height for your items */
+    opacity: 1;
+    padding: 1rem 0;
   }
 }
 

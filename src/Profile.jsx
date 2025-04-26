@@ -1,14 +1,23 @@
 import React from "react";
-import "./profile.css"; // You can define styles here to match the design
-import { Link } from "react-router-dom";
-import profilePic from "../public/images/pexels-andrewperformance1-697509.jpg"; // Replace with actual image path
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import "./profile.css";
+import profilePic from "../public/images/pexels-andrewperformance1-697509.jpg";
 
 const Profile = () => {
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleClose = () => {
+    navigate(-1); // Go back to previous page
+  };
+
   return (
     <div className="profile-container">
       {/* Top section with profile image */}
       <div className="profile-header">
-        <div className="profile-close-btn">❮</div>
+        <div className="profile-close-btn" onClick={handleClose}>
+          <i class="bx bx-chevron-left"></i>
+        </div>{" "}
+        {/* Add onClick */}
         <div className="profile-avatar">
           <img src={profilePic} alt="User" />
         </div>

@@ -14,7 +14,7 @@ const Navbar = ({ isLoggedIn }) => {
           <img src={landingLogo} alt="Logo" />
         </div>
 
-        {/* Hamburger Menu Icon */}
+        {/* Hamburger */}
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
@@ -22,25 +22,21 @@ const Navbar = ({ isLoggedIn }) => {
         </div>
 
         {/* Navigation Links */}
-        <div>
-          <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-            <li>
-              <Link to="/explore">Explore</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+          <li>
+            <Link to="/explore">Explore</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
 
         {/* Authentication Buttons */}
         <div className={`auth-buttons ${isOpen ? "active" : ""}`}>
           {isLoggedIn ? (
-            <>
-              <Link to="/profile" className="signup">
-                <i className="bx bx-user"></i>
-              </Link>
-            </>
+            <Link to="/profile" className="signup">
+              <i className="bx bx-user"></i>
+            </Link>
           ) : (
             <>
               <Link to="/login" className="login">

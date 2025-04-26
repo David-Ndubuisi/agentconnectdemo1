@@ -32,7 +32,7 @@ const ProtectedRoute = ({ isLoggedIn, children }) => {
 };
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // Track login state
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login state
 
   return (
     <Router>

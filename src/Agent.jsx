@@ -36,9 +36,9 @@ function Agent() {
           <p onClick={() => setShowInfo(!showInfo)} className="toggle-text">
             <strong>More Information</strong>{" "}
             {showInfo ? (
-              <i class="bx bx-chevron-down"></i>
-            ) : (
               <i class="bx bx-chevron-up"></i>
+            ) : (
+              <i class="bx bx-chevron-down"></i>
             )}
           </p>
           {showInfo && (

@@ -12,11 +12,14 @@ const NewListing = () => {
     );
   };
 
+  // Limit to the first 6 properties
+  const featured = properties.slice(0, 6);
+
   return (
     <div className="featured-properties">
-      <h2>NewListing</h2>
+      <h2>New Listing</h2>
       <div className="properties-container">
-        {properties.map((property) => (
+        {featured.map((property) => (
           <div key={property.id} className="property-card">
             <img
               src={property.image}

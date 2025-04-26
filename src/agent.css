@@ -33,6 +33,7 @@
 }
 
 .agent-rating {
+  margin-left: 11px;
   font-size: 0.9rem;
 }
 
@@ -111,6 +112,10 @@
 }
 
 @media (max-width: 768px) {
+  .agent-header {
+    padding: 6rem 2rem 3.5rem 3rem;
+  }
+
   .agent-details h2 {
     padding-left: 0rem;
   }
