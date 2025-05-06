@@ -48,7 +48,7 @@ function MainContent({ isLoggedIn, setIsLoggedIn }) {
     <div>
       {/* Conditionally render Navbar only if NOT on login or signup page */}
       {!["/login", "/signup", "/contact"].includes(location.pathname) && (
-        <Navbar isLoggedIn={isLoggedIn} />
+        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       )}
 
       <Routes>

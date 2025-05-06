@@ -80,6 +80,16 @@
     padding: 1rem 0;
   }
 }
+.toggle-btn {
+  font-size: 11px;
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
 /* Hero Section */
 .hero-section {

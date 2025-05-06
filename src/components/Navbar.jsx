@@ -4,8 +4,12 @@ import landingLogo from "../images/LOGO.png";
 import "../responsive.css";
 import Hero from "./hero";
 
-const Navbar = ({ isLoggedIn }) => {
+const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleLogin = () => {
+    setIsLoggedIn((prev) => !prev); // Flip login state
+  };
 
   return (
     <div>
@@ -47,6 +51,11 @@ const Navbar = ({ isLoggedIn }) => {
               </Link>
             </>
           )}
+
+          {/* 🔄 Toggle Button */}
+          <button onClick={toggleLogin} className="toggle-btn">
+            Toggle
+          </button>
         </div>
       </nav>
     </div>
