@@ -29,7 +29,7 @@ function Property() {
 
       <PropertyMap location={property.location} mapSrc={property.mapSrc} />
 
-      <PropertyPayment />
+      <PropertyPayment propertyId={property.id} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PropertyPayment = () => {
+const PropertyPayment = ({ propertyId }) => {
   return (
     <div className="property-payment">
       <h2>Payment</h2>
@@ -16,7 +17,9 @@ const PropertyPayment = () => {
           connect.
         </span>
       </p>
-      <button className="rent-btn">Rent</button>
+      <Link to={`/checkout/${propertyId}`}>
+        <button className="rent-btn">Rent</button>
+      </Link>
     </div>
   );
 };
